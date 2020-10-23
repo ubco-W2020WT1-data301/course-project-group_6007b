@@ -1,0 +1,1 @@
+The 'raw' directory contains the raw dataset, while the 'processed' directory contains the cleaned and processed data.

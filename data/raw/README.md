@@ -1,0 +1,1 @@
+This directory include the raw dataset download from https://www.kaggle.com/rsrishav/youtube-trending-video-dataset?select=BR_youtube_trending_data.csv on October 23, 2020. And it includes the youtube trending data from Canada, US and Great Britain.
