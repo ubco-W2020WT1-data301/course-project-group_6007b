@@ -9,7 +9,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-{Add your stuff here}
+We are interested in what topics/keywords are in popular Youtube videos over time, looking at titles, tags, and descriptions for keywords and looking at view count and like-dislike ratio to measure popularity. 
 
 ## Describe your dataset in about 150-200 words
 
@@ -17,9 +17,9 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Team Members
 
-- Person 1: one sentence about you!
-- Person 2: one sentence about you!
-- Person 3: one sentence about you!
+- Kristy: one sentence about you!
+- Brendan: one sentence about you!
+- Nathan: I like to work in 3d programs and enjoy learning about data science.
 
 ## References
 
