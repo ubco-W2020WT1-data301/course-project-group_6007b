@@ -13,7 +13,7 @@ Nowadays people have been spending increasing amount of time on Youtube videos, 
 
 ## Describe your dataset in about 150-200 words
 
-This dataset is a record of top trending YouTube videos. The dataset is obtain from Kaggle Database published by Rishav Sharama. He uses Youtube API to collect the data and updates the dataset daily. The dataset was downloaded on Oct. 23th, 2020 and include Youtube trending data from Canada, USA and Great Britain, which are in separate files. Each dataset include video ID, title, publish time, channel ID, channel title, tags, video description,and the count of views, likes, dislikes and comment. The datasets include the Youtube video trending data for the recent three months(Aug., Sept. and Oct.2020). These datasets can be used to do analysis in many aspects, such as how trending changes overtime, trending differences between regions, etc. }
+This dataset is a record of top trending YouTube videos. The dataset is obtain from Kaggle Database published by Rishav Sharama. He uses Youtube API to collect the data and updates the dataset daily. The dataset was downloaded on Oct. 23th, 2020 and include Youtube trending data from Canada, USA and Great Britain, which are in separate files. Each dataset include video ID, title, publish time, channel ID, channel title, tags, video description,and the count of views, likes, dislikes and comment. The datasets include the Youtube video trending data for the recent three months(Aug., Sept. and Oct.2020). These datasets can be used to do analysis in many aspects, such as how trending changes overtime, trending differences between regions, etc. 
 
 ## Team Members
 
