@@ -70,7 +70,13 @@ def log (df_lastdate):
         df_lastdate.assign(log_likes=np.log(df_lastdate['likes']))
         .assign(log_views=np.log(df_lastdate['view_count']))
         .assign(log_dislikes=np.log(df_lastdate['dislikes']))
+        .assign(log_comment=np.log(df_lastdate['comment_count']))
+        .loc[~(df_lastdate==0).all(axis=1)]
+        .replace([np.inf, -np.inf], np.nan).dropna(how="all")
+        .drop(columns = ['view_count','likes','dislikes','comment_count'])
     )
     
     return df_assign
+    
+    
     
