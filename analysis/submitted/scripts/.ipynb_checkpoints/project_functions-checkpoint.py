@@ -44,7 +44,7 @@ def load_and_process (data):
         #clean the dataset
     df_clean = (
             pd.DataFrame(data=df)
-            .drop(columns = ['thumbnail_link','comments_disabled','ratings_disabled','description','title','channelId'])
+            .drop(columns = ['thumbnail_link','comments_disabled','ratings_disabled','channelId'])
             .replace({"categoryId":category_replace}).rename(columns= {'categoryId':'category'})
             .drop(df[df['categoryId']=='NaN'].index).sort_values('trending_date')
             .reset_index().drop(columns = ['index'])
