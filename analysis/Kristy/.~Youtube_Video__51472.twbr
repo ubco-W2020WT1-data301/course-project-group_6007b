@@ -1,0 +1,1699 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook source-build='2020.3.2 (20203.20.1018.2303)' source-platform='mac' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='YoutubeVideoTrendingAnalysis' path='/t/data301dashboards/workbooks' revision='1.1' site='data301dashboards' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Youtube_data' inline='true' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Youtube_data' name='textscan.0n60d1t1a15u2u1bjuz3l14im2vf'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/data/processed/Youtube_data.csv' dataRefreshTime='' directory='/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/data/processed' filename='/var/folders/1g/rf31xc8d2k92_zphw3xv1v3w0000gn/T/tableau-temp/198sa2p0st5sf412k6e1t10bddqx/Youtube_data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0n60d1t1a15u2u1bjuz3l14im2vf' name='Youtube_data.csv' table='[/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/data/processed/Youtube_data#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:N5399:no:A1:N5399:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelTitle' ordinal='3' />
+            <column datatype='string' name='category' ordinal='4' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='trending_date' ordinal='5' />
+            <column datatype='string' name='tags' ordinal='6' />
+            <column datatype='integer' name='view_count' ordinal='7' />
+            <column datatype='integer' name='likes' ordinal='8' />
+            <column datatype='integer' name='dislikes' ordinal='9' />
+            <column datatype='integer' name='comment_count' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+            <column datatype='string' name='country' ordinal='12' />
+            <column datatype='real' name='ratio' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0n60d1t1a15u2u1bjuz3l14im2vf' name='Youtube_data.csv' table='[/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/data/processed/Youtube_data#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:N5399:no:A1:N5399:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelTitle' ordinal='3' />
+            <column datatype='string' name='category' ordinal='4' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='trending_date' ordinal='5' />
+            <column datatype='string' name='tags' ordinal='6' />
+            <column datatype='integer' name='view_count' ordinal='7' />
+            <column datatype='integer' name='likes' ordinal='8' />
+            <column datatype='integer' name='dislikes' ordinal='9' />
+            <column datatype='integer' name='comment_count' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+            <column datatype='string' name='country' ordinal='12' />
+            <column datatype='real' name='ratio' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N5399:no:A1:N5399:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publishedAt</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[publishedAt]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>publishedAt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelTitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelTitle]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>channelTitle</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ratio]</local-name>
+            <parent-name>[Youtube_data.csv]</parent-name>
+            <remote-alias>ratio</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Youtube_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Channel Title' datatype='string' name='[channelTitle]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Published At' datatype='datetime' name='[publishedAt]' role='dimension' type='ordinal' />
+      <column caption='Ratio' datatype='real' name='[ratio]' role='measure' type='quantitative' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Trending Date' datatype='datetime' name='[trending_date]' role='dimension' type='ordinal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[view_count]' derivation='None' name='[none:view_count:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[trending_date]' derivation='Day-Trunc' name='[tdy:trending_date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[trending_date]' derivation='Week-Trunc' name='[twk:trending_date:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Category,Country)' hidden='true' name='[Action (Category,Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Category,Country,View Count)' hidden='true' name='[Action (Category,Country,View Count)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[category]' />
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='level-members' level='[none:view_count:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Category,DAY(Trending Date))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:category:nk]' />
+          <groupfilter function='level-members' level='[tdy:trending_date:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Category,WEEK(Trending Date))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:category:nk]' />
+          <groupfilter function='level-members' level='[twk:trending_date:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;NaN&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Autos &amp; Vehicles&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Film &amp; Animation&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Science &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;News &amp; Politics&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gaming&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Howto &amp; Style&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Travel &amp; Events&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;People &amp; Blogs&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pets &amp; Animals&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GB&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Youtube_data.csv' id='Youtube_data.csv_D706614E810145A2BA0DAFA1843B0D20'>
+            <properties context=''>
+              <relation connection='textscan.0n60d1t1a15u2u1bjuz3l14im2vf' name='Youtube_data.csv' table='[/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/data/processed/Youtube_data#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:N5399:no:A1:N5399:1' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='publishedAt' ordinal='2' />
+                  <column datatype='string' name='channelTitle' ordinal='3' />
+                  <column datatype='string' name='category' ordinal='4' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='trending_date' ordinal='5' />
+                  <column datatype='string' name='tags' ordinal='6' />
+                  <column datatype='integer' name='view_count' ordinal='7' />
+                  <column datatype='integer' name='likes' ordinal='8' />
+                  <column datatype='integer' name='dislikes' ordinal='9' />
+                  <column datatype='integer' name='comment_count' ordinal='10' />
+                  <column datatype='string' name='description' ordinal='11' />
+                  <column datatype='string' name='country' ordinal='12' />
+                  <column datatype='real' name='ratio' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='tag_file' inline='true' name='federated.0jjfbgx1vsqbrm1gks0ph0d5mt3e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tag_file' name='textscan.0bn4r1y1rfg3rq0zzo7um0bsvq7e'>
+            <connection class='textscan' directory='/Users/amarishitone/Desktop/DATA301/course-project-group_6007b/analysis/Kristy' filename='tag_file.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bn4r1y1rfg3rq0zzo7um0bsvq7e' name='tag_file.csv' table='[tag_file#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='integer' name='view_count' ordinal='1' />
+            <column datatype='string' name='tag' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bn4r1y1rfg3rq0zzo7um0bsvq7e' name='tag_file.csv' table='[tag_file#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='integer' name='view_count' ordinal='1' />
+            <column datatype='string' name='tag' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tag_file.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[tag_file.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tag_file.csv_EF69CE1A7EFA4CD2944AA7D785BB87B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[tag_file.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tag_file.csv_EF69CE1A7EFA4CD2944AA7D785BB87B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tag]</local-name>
+            <parent-name>[tag_file.csv]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tag_file.csv_EF69CE1A7EFA4CD2944AA7D785BB87B6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='tag_file.csv' datatype='table' name='[__tableau_internal_object_id__].[tag_file.csv_EF69CE1A7EFA4CD2944AA7D785BB87B6]' role='measure' type='quantitative' />
+      <column caption='Tag' datatype='string' name='[tag]' role='dimension' type='nominal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tag_file.csv' id='tag_file.csv_EF69CE1A7EFA4CD2944AA7D785BB87B6'>
+            <properties context=''>
+              <relation connection='textscan.0bn4r1y1rfg3rq0zzo7um0bsvq7e' name='tag_file.csv' table='[tag_file#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='integer' name='view_count' ordinal='1' />
+                  <column datatype='string' name='tag' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 5 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Research question' type='sheet' worksheet='number of video publish in category -country' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='view count distribution-country' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Research question' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Week day '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Best Day to Post</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[video_id]' derivation='Count' name='[cnt:video_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[view_count]' derivation='Median' name='[med:view_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Published At' datatype='datetime' name='[publishedAt]' role='dimension' type='ordinal' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+            <column-instance column='[publishedAt]' derivation='Weekday' name='[wd:publishedAt:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' filter-group='3' included-values='in-range'>
+            <min>21963</min>
+            <max>2929803</max>
+          </filter>
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[cnt:video_id:qk]' scope='rows' value='Number of Video Published' />
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='Number of Views ' />
+            <format attr='auto-subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='false' />
+            <format attr='subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='Median' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[cnt:video_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.095kotw0jd5jui1e0yrrv1yhnzo5].[cnt:video_id:qk] + [federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk])</rows>
+        <cols>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[wd:publishedAt:ok]</cols>
+        <pages>
+          <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{9E8B9D1B-D55A-4394-8EC3-15B5C0AE81C0}' />
+    </worksheet>
+    <worksheet name='category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Summary Statistics by Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column-instance column='[ratio]' derivation='Avg' name='[avg:ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[view_count]' derivation='Avg' name='[avg:view_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[video_id]' derivation='CountD' name='[ctd:video_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[view_count]' derivation='None' name='[none:view_count:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratio' datatype='real' name='[ratio]' role='measure' type='quantitative' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country,View Count)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[none:view_count:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]'>
+            <groupfilter function='level-members' level='[none:category:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' direction='DESC' using='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]' />
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country,View Count)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:ratio:qk]' scope='cols' value='Popularity' />
+            <format attr='auto-subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:ratio:qk]' scope='cols' value='false' />
+            <format attr='subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:ratio:qk]' scope='cols' value='Avg. Like/Dislike Ratio' />
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]' scope='cols' value='Number of Video Published' />
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:view_count:qk]' scope='cols' value='Popularity' />
+            <format attr='auto-subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:view_count:qk]' scope='cols' value='false' />
+            <format attr='subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:view_count:qk]' scope='cols' value='Avg. Views' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:view_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</rows>
+        <cols>([federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk] + ([federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:ratio:qk] + [federated.095kotw0jd5jui1e0yrrv1yhnzo5].[avg:view_count:qk]))</cols>
+        <page-trail-options mark-color='#bab0ac' mark-color-auto='false' mark-type='all' size='2' start='0' />
+      </table>
+      <simple-id uuid='{93D6944C-D3DA-4F70-9717-2AC93D1C6326}' />
+    </worksheet>
+    <worksheet name='number of video publish in category -country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Publish Trends- &lt;Page Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[video_id]' derivation='CountD' name='[ctd:video_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Autos &amp; Vehicles&quot;' function='range' level='[none:category:nk]' to='&quot;Music&quot;' />
+              <groupfilter from='&quot;News &amp; Politics&quot;' function='range' level='[none:category:nk]' to='&quot;Travel &amp; Events&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' direction='DESC' using='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]' />
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]' scope='cols' value='Numbero of Videos Published' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</rows>
+        <cols>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[ctd:video_id:qk]</cols>
+        <pages>
+          <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{C368AFFD-3236-41DD-AC13-E20F361AEA17}' />
+    </worksheet>
+    <worksheet name='view count distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>View Count Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[video_id]' derivation='Count' name='[cnt:video_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:category:nk]' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;NaN&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' direction='DESC' using='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[cnt:video_id:qk]' />
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]'>
+            <groupfilter function='member' level='[none:country:nk]' member='&quot;CA&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' filter-group='3' included-values='in-range'>
+            <min>21963</min>
+            <max>2929803</max>
+          </filter>
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_gray60' />
+            <format attr='opacity' id='refline0' value='201' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.31784531474113464' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</rows>
+        <cols>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</cols>
+      </table>
+      <simple-id uuid='{3282574A-3FBF-4520-8F47-1A95E8368E0C}' />
+    </worksheet>
+    <worksheet name='view count distribution-country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Views Distribution of <Page Name>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[video_id]' derivation='Count' name='[cnt:video_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:category:nk]' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;NaN&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' direction='DESC' using='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[cnt:video_id:qk]' />
+          <filter class='quantitative' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' filter-group='3' included-values='in-range'>
+            <min>21963</min>
+            <max>2929803</max>
+          </filter>
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' scope='cols' value='Views' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_purple' />
+            <format attr='opacity' id='refline0' value='201' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.31784531474113464' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</rows>
+        <cols>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</cols>
+        <pages>
+          <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{149FEBE6-441D-4C19-97AC-C8B90A397C70}' />
+    </worksheet>
+    <worksheet name='view count over time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>View Trend of  &apos;&lt;Page Name&gt;&apos;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[view_count]' derivation='Median' name='[med:view_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trending_date]' derivation='Day-Trunc' name='[tdy:trending_date:qk]' pivot='key' type='quantitative' />
+            <column caption='Trending Date' datatype='datetime' name='[trending_date]' role='dimension' type='ordinal' />
+            <column-instance column='[trending_date]' derivation='Week-Trunc' name='[twk:trending_date:qk]' pivot='key' type='quantitative' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[category]' />
+              <groupfilter function='level-members' level='[country]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Exclusions (Category,DAY(Trending Date))]' />
+          <filter class='categorical' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Exclusions (Category,WEEK(Trending Date))]' />
+          <filter class='quantitative' column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' filter-group='3' included-values='in-range'>
+            <min>21963</min>
+            <max>2929803</max>
+          </filter>
+          <slices>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Exclusions (Category,DAY(Trending Date))]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Exclusions (Category,WEEK(Trending Date))]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]</column>
+            <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[Action (Category,Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='Number of Views' />
+            <format attr='auto-subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='false' />
+            <format attr='subtitle' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]' scope='rows' value='Median of week' />
+            <format attr='title' class='0' field='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[twk:trending_date:qk]' scope='cols' value='Date' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[med:view_count:qk]</rows>
+        <cols>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[twk:trending_date:qk]</cols>
+        <pages>
+          <column>[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{85491BC0-E690-4174-81C2-983E9F7EB7CD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Research question'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Video Trends in Different Countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+      </datasources>
+      <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+        <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+        <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='86158' id='23' param='vert' w='98888' x='556' y='920'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='59' h='7702' id='24' is-fixed='true' w='98888' x='556' y='920'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='78456' id='13' param='vert' w='98888' x='556' y='8622'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='78456' id='11' param='vert' w='98888' x='556' y='8622'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='78456' id='7' param='horz' w='98888' x='556' y='8622'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' fixed-size='473' h='78456' id='5' is-fixed='true' w='32847' x='556' y='8622'>
+                    <zone h='39225' id='14' name='number of video publish in category -country' w='32847' x='556' y='8622'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='39231' id='21' name='view count distribution-country' w='32847' x='556' y='47847'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='78456' id='3' name='view count over time' w='46597' x='33403' y='8622'>
+                    <layout-cache minheight='198' minwidth='174' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='280' h='78456' id='6' is-fixed='true' param='vert' w='19444' x='80000' y='8622'>
+                    <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' count='2' h='12644' id='16' name='number of video publish in category -country' name1='view count distribution-country' name2='Week day ' synchronized='1' w='19444' x='80000' y='8622'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5863' id='18' name='view count over time' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' w='19444' x='80000' y='21266'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='59949' id='25' name='Week day ' w='19444' x='80000' y='27129'>
+                      <layout-cache cell-count-w='7' minheight='344' non-cell-size-w='75' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12002' id='27' w='98888' x='556' y='87078'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000'>NOTE: </run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000'>- Click on the category in the  &apos;Publish Trends&apos;  graph can choose the different categories.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000'>- Click on the &apos;Country&apos; bottom on the top right can change the country.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000'>- Since some videos have a lot more views than others, &apos;View Count&apos; bottom gives a option to choose the range.</run>
+              <run>Æ&#10;&#10;&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='10480' id='26' param='/Users/amarishitone/Desktop/download.png' w='16404' x='60066' y='728' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>Video Trends in Different Countries</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='45' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97672' id='44' param='vert' w='98674' x='663' y='1164'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='59' h='9752' id='24' w='98674' x='663' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='84' h='10480' id='26' is-fixed='true' param='/Users/amarishitone/Desktop/download.png' w='16404' x='60066' y='728'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37987' id='14' is-fixed='true' name='number of video publish in category -country' w='39188' x='663' y='10916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7423' id='18' name='view count over time' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' w='23198' x='76139' y='26927'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='75979' id='3' is-fixed='true' name='view count over time' w='36288' x='39851' y='10916'>
+                  <layout-cache minheight='198' minwidth='174' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52545' id='25' is-fixed='true' name='Week day ' w='23198' x='76139' y='34350'>
+                  <layout-cache cell-count-w='7' minheight='320' non-cell-size-w='75' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37992' id='21' is-fixed='true' name='view count distribution-country' w='39188' x='663' y='48903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11941' id='27' w='98674' x='663' y='86895'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000'>NOTE: </run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- Click on the category in the  &apos;Publish Trends&apos;  graph can choose the different categories.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- Click on the &apos;Country&apos; bottom on the top right can change the country.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000'>- Since some videos have a lot more views than others, &apos;View Count&apos; bottom gives a option to choose the range.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='currpage' _.fcp.SetMembershipControl.true...type-v2='currpage' count='2' h='16011' id='16' name='number of video publish in category -country' name1='view count distribution-country' name2='Week day ' synchronized='1' w='23198' x='76139' y='10916'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FA9D4714-853D-4BA3-A2A7-B2848499F18C}' />
+    </dashboard>
+    <dashboard name='summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Video Trending Analysis (Aug. - Oct. 2020)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Youtube_data' name='federated.095kotw0jd5jui1e0yrrv1yhnzo5' />
+      </datasources>
+      <datasource-dependencies datasource='federated.095kotw0jd5jui1e0yrrv1yhnzo5'>
+        <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[view_count]' derivation='None' name='[none:view_count:qk]' pivot='key' type='quantitative' />
+        <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98160' id='43' param='horz' w='98888' x='556' y='920'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98160' id='24' param='horz' w='98888' x='556' y='920'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98160' id='18' param='vert' w='98888' x='556' y='920'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='83' h='10460' id='19' is-fixed='true' w='98888' x='556' y='920'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='87700' id='7' param='horz' w='98888' x='556' y='11380'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='87700' id='5' w='98888' x='556' y='11380'>
+                    <zone h='43856' id='22' name='category' w='98888' x='556' y='55224'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='43844' id='26' w='43212' x='556' y='11380'>
+                      <formatted-text>
+                        <run fontcolor='#000000'>        People have been spending an increasing amount of time on Youtube videos, especially during the Coronavirus pandemic where people have to stay at home. In the meantime, a lot of people become YouTubers and making money from sharing their videos. Knowing the trend of recent popular youtube topic has become a significant factor when individuals try to explore the interest of society.</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000'>Æ    </run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000'>Æ        </run>
+                        <run fontcolor='#24292e'>This dataset is a record of top trending YouTube videos in Aug., Sept. and Oct. 2020. The dataset is obtained from Kaggle Database published by Rishav Sharama, which includes Youtube trending data from Canada, the USA, and Great Britain. These datasets can be used to do analysis  on the change of trending changes overtime, trending differences between regions, etc.</run>
+                        <run>Æ&#10;&#10;</run>
+                        <run fontcolor='#000000'>Æ        </run>
+                        <run bold='true' fontcolor='#000000'> The first dashboard shows a summary of the dataset, while the second dashboard shows a more detailed trending in each category in each country.</run>
+                        <run>Æ&#10;</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43844' id='41' name='view count distribution' w='55676' x='43768' y='11380'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='92' h='10044' id='20' is-fixed='true' param='/Users/amarishitone/Desktop/download.png' w='21112' x='52997' y='2329' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='88' h='12082' id='25' is-fixed='true' name='category' pane-specification-id='1' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' w='13988' x='84970' y='52402' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='15721' id='44' mode='radiolist' name='view count distribution' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' w='14596' x='89314' y='5095' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='10044' id='45' name='view count distribution' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' w='14596' x='72893' y='9316' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>Video Trending Analysis (Aug. - Oct. 2020)</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='49' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97672' id='48' param='vert' w='98674' x='663' y='1164'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='83' h='13246' id='19' w='98674' x='663' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='80' h='10044' id='20' is-fixed='true' param='/Users/amarishitone/Desktop/download.png' w='21112' x='52997' y='2329'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='42208' id='26' w='43119' x='663' y='14410'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>        People have been spending an increasing amount of time on Youtube videos, especially during the Coronavirus pandemic where people have to stay at home. In the meantime, a lot of people become YouTubers and making money from sharing their videos. Knowing the trend of recent popular youtube topic has become a significant factor when individuals try to explore the interest of society.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Æ    </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Æ        </run>
+                    <run fontcolor='#24292e'>This dataset is a record of top trending YouTube videos in Aug., Sept. and Oct. 2020. The dataset is obtained from Kaggle Database published by Rishav Sharama, which includes Youtube trending data from Canada, the USA, and Great Britain. These datasets can be used to do analysis  on the change of trending changes overtime, trending differences between regions, etc.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>Æ        </run>
+                    <run bold='true' fontcolor='#000000'> The first dashboard shows a summary of the dataset, while the second dashboard shows a more detailed trending in each category in each country.</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='15721' id='44' mode='dropdown' name='view count distribution' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' w='14596' x='89314' y='5095'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='10044' id='45' name='view count distribution' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' w='14596' x='72893' y='9316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42208' id='41' is-fixed='true' name='view count distribution' w='55555' x='43782' y='14410'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42218' id='22' is-fixed='true' name='category' w='98674' x='663' y='56618'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='88' h='12082' id='25' name='category' pane-specification-id='1' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' w='13988' x='84970' y='52402'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8FE9A63D-DD4E-43D0-8DD8-BEF823FA49E8}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='51'>
+    <window class='worksheet' name='category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66F21342-17AC-4837-863B-FF759225C9FE}' />
+    </window>
+    <window class='worksheet' name='view count distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='filter' />
+            <card param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E511122C-10CE-4752-8A9B-D42B5315646D}' />
+    </window>
+    <window class='worksheet' name='number of video publish in category -country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;US&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{CC0F0964-058C-416B-86C9-7A6D81395AEA}' />
+    </window>
+    <window class='worksheet' name='view count distribution-country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:view_count:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;US&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{A6D742BB-879C-406D-B770-CFEA3D8A8316}' />
+    </window>
+    <window class='worksheet' name='view count over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:category:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;People &amp; Blogs&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{6777B2ED-914A-41D3-9C79-5FD014220F6C}' />
+    </window>
+    <window class='worksheet' name='Week day '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='1' param='[federated.095kotw0jd5jui1e0yrrv1yhnzo5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;CA&quot;</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{445EE3BC-DE10-4045-883F-CF5389F969A9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='summary'>
+      <viewpoints>
+        <viewpoint name='category' />
+        <viewpoint name='view count distribution' />
+      </viewpoints>
+      <active id='26' />
+      <simple-id uuid='{EA23C556-60D0-45B5-8484-1451E2F24D3C}' />
+    </window>
+    <window class='dashboard' name='Research question'>
+      <viewpoints>
+        <viewpoint name='Week day '>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;CA&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='number of video publish in category -country'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;CA&quot;</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+        <viewpoint name='view count distribution-country'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;CA&quot;</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+        <viewpoint name='view count over time'>
+          <current-page>
+            <multibucket>
+              <bucket>&quot;Travel &amp; Events&quot;</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='27' />
+      <simple-id uuid='{52C5A608-82EB-4C5F-8C63-6196419F90FB}' />
+    </window>
+  </windows>
+</workbook>
