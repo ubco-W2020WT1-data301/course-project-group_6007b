@@ -12,6 +12,10 @@ In this analysis, we are interesting in what categories of videos are popular on
 
 This dataset is a record of top trending YouTube videos. The dataset is obtained from Kaggle Database published by Rishav Sharama. He uses Youtube API to collect the data and updates the dataset daily. The dataset was downloaded on Oct. 23th, 2020, and includes Youtube trending data from Canada, the USA, and Great Britain, which are in separate files. Each dataset includes **video ID, title, publish time, channel ID, channel title, tags, video description, and the count of views, likes, dislikes, and comments.** The datasets include the Youtube video trending data for the recent three months(Aug., Sept. and Oct.2020). These datasets can be used to do analysis in many aspects, such as how trending changes overtime, trending differences between regions, etc. 
 
+## Presentation
+
+This the the presentation of the project: [Youtube Trending Analysis Presentation](https://youtu.be/FueWLJII4mQ)
+
 ## Team Members
 
 - **Kristy**: I would like to learn more about data and become a data analyst.
